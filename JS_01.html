@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+
+</style>
+
+<body>
+
+</body>
+<script>
+    console.groupCollapsed('For')
+    for (let i = 0; i <= 10; i++) {
+        console.log(i);
+    }
+    console.groupEnd();
+
+
+    // Variabels 1
+    let celsius = 0;
+    let fahrenheit = celsius * 1.8 + 32;
+
+    console.groupCollapsed('Fahrenheit to Celsius')
+    console.log(celsius + ' degree celsius is exactly ' + fahrenheit + ' in Fahrenheit');
+    console.groupEnd();
+
+    // String Index
+    let myStringIndex = 'Chris';
+    console.groupCollapsed('String Index')
+    console.log(myStringIndex[1]);
+    console.groupEnd();
+
+    //Escaping strings
+    console.log("the nice \"man\" \nHey \tTab")
+
+    //Quiz
+    var answer = "ALL Strings are CrEaTeD equal" == "ALL Strings are CrEaTeD equal";
+    console.log(answer);
+
+    // Other Types
+    let myNull = null;
+    let myUndefined = undefined;
+    let myAlsoUndefined;
+    console.log(myAlsoUndefined);
+
+    // Strict comparision
+    "1" === 1; // false
+    0 === 0; // true
+    0 === false; // false
+
+    // Bill calculator
+    let bill = 15;
+    let tip = bill * 0.15;
+    let total = bill + tip;
+    console.log(total.toFixed(2));
+</script>
+
+</html>
